@@ -1,5 +1,7 @@
 document.getElementById('btn').addEventListener('click',function(){
    
+   
+   
    console.log("df");
    const player = document.getElementById('player-1');
    const newPlayer = player.innerText;
@@ -8,6 +10,10 @@ document.getElementById('btn').addEventListener('click',function(){
    const li = document.createElement('li-one');
    li.innerText = newPlayer;
    ul.appendChild(li);
+    btn.setAttribute('disabled', true);
+  
+
+  
 
 })
 document.getElementById('btn1').addEventListener('click',function(){
