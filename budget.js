@@ -26,13 +26,9 @@ document.getElementById('btn-cal-total').addEventListener('click',function(count
     }
     
     const totalExpense =  total + valueOne + valueTwo;
-    console.log(totalExpense);
     
 
    const totalCalculate = document.getElementById('total-expense');
    totalCalculate.innerText = totalExpense;
-
-
-
 
 })

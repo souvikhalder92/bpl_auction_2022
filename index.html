@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="bg-neutral-700 pb-32 pt-3s text-center mt-3">
+    <header class="bg-neutral-700 pb-32 pt-3 text-center">
         <section>
           <img class="w-52 m-auto pt-5" src="img/bpl2.png" alt="">
             <div class="space-y-4 mt-4 text-center">
@@ -28,7 +28,7 @@
     </header>
     <main class="container mx-auto bg-[#E5E5E5]">
         <section class="pb-24 pt-12">
-         <div class="grid  grid-cols-4 gap-7 px-10">
+         <div class="grid  grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-7 px-10">
          <div class="card-body shadow-lg rounded bg-neutral-300">
            <img src="img/shakib.jpg" alt="">
            <h3  class="card-title text-2xl font-semibold text-center mt-2">Shakib Al Hasan</h3>
@@ -69,7 +69,7 @@
          </div>
         </section>
         <section class="pb-6 pt-6">
-            <div class="grid  grid-cols-4 gap-7 px-10">
+            <div class="grid  grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-7 px-10">
             <div class="shadow-lg rounded bg-neutral-300">
               <img src="img/tamim.jpg" alt="">
               <h3 id="player-4" class="text-2xl font-semibold text-center mt-2">Tamim Iqbal</h3>
@@ -109,13 +109,13 @@
                   <h2 class="mt-4 font-semibold mx-12">Player Expense : $ <span id="total">00</span></h2>
 
                   <h1 class="pt-2 font-semibold mx-12">Manager <input class="m-2 w-1/2 text-center" id="num1" type="text"></h1>
-                  <h1 class="font-semibold mx-12">Coach <input class="m-7 w-1/2 text-center" id="num2" type="text"></h1>
+                  <h1 class="font-semibold mx-12">Coach <input class="m-3 lg:m-7  w-1/2 text-center" id="num2" type="text"></h1>
                   <div>
                     <button id="btn-cal-total" class="w-full mt-2 bg-[#015196] py-2 px-2 text-white font-semibold rounded text-1xl">
                       Calculate Total</button>
   
                     </div>
-                    <h2 class="mt-4 font-semibold text-3xl text-[#FF5E19] mx-16">Total : $ <span id="total-expense">00</span></h2>
+                    <h2 class="mt-4 font-semibold text-3xl text-[#FF5E19] mx-12">Total : $ <span id="total-expense">00</span></h2>
 
                   </div>
               </div>
