@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="bg-neutral-700 pb-32 pt-5 text-center mt-3">
+    <header class="bg-neutral-700 pb-32 pt-3s text-center mt-3">
         <section>
-          <img class="w-52 m-auto" src="img/bpl2.png" alt="">
+          <img class="w-52 m-auto pt-5" src="img/bpl2.png" alt="">
             <div class="space-y-4 mt-4 text-center">
                 <h1 class="text-2xl  uppercase font-bold">
                   <span class="text-4xl text-[#FF5E19]">Bangladesh Premier League Auction
@@ -29,43 +29,40 @@
     <main class="container mx-auto bg-[#E5E5E5]">
         <section class="pb-24 pt-12">
          <div class="grid  grid-cols-4 gap-7 px-10">
-         <div class="p-4 shadow-lg rounded">
+         <div class="card-body shadow-lg rounded bg-neutral-300">
            <img src="img/shakib.jpg" alt="">
-           <h3 id="player-1" class="text-2xl font-semibold text-center mt-2">Shakib Al Hasan</h3>
+           <h3  class="card-title text-2xl font-semibold text-center mt-2">Shakib Al Hasan</h3>
            <p class="text-center">All-Rounder</p>
-             <div class="mx-28">
-               <button id="btn" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+             <div class="card-actions mx-32">
+               <button id="btn" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                  select</button>
              </div>
          </div>
-         <div class="p-4 shadow-lg rounded">
+         <div class="shadow-lg rounded bg-neutral-300">
              <img src="img/Mashrafe.png" alt="">
-             <h3 id="player-2" class="text-2xl font-semibold text-center mt-2">Mashrafe Bin Mortaza </h3>
+             <h3  class="text-2xl font-semibold text-center mt-2">Mashrafe Bin Mortaza </h3>
              <p class="text-center">Fast-Bowler</p>
-               <div class="mx-28">
-                 <button id="btn1" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+               <div class="mx-32">
+                 <button id="btn1" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                    select</button>
                </div>
            </div>
-           <div class="p-4 shadow-lg rounded">
-             <img src="img/Mushfiqur-Rahim.jpg" alt="">
+           <div class="shadow-lg rounded bg-neutral-300">
+             <img  src="img/Mushfiqur-Rahim.jpg" alt="">
              <h3 id="player-3" class="text-2xl font-semibold text-center mt-2">Mushfiqur Rahim</h3>
              <p class="text-center">Wicket-Keeper</p>
-               <div class="mx-28">
-                 <button id="btn2" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+               <div class="mx-32 pb-3">
+                 <button id="btn2" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                    select</button>
                </div>
            </div>
-          <div class="p-4 shadow-lg">
-            <h1 class="text-center font-bold text-black text-2xl">Selected-V</h1>
-            <ul id="ul" class="mx-12 mt-5">
-               <li id="li-one" class="list-decimal"></li>
-                <li id="li-two"></li>
-                <li id="li-three"></li>
-                <li id="li-four"></li>
-                <li id="li-five"></li>
-                <li id="li-six"></li>
-              </ul>
+          <div class="p-4 shadow-lg bg-neutral-300">
+            <h1 class="text-center font-bold text-amber-500 text-4xl">Selected-V</h1>
+            <table class="table-auto mt-5">
+              <tbody id="players" class="text-2xl text-center font-semibold text-gray-600">
+               
+              </tbody>
+            </table>
         
                </div>
            </div>
@@ -73,59 +70,59 @@
         </section>
         <section class="pb-6 pt-6">
             <div class="grid  grid-cols-4 gap-7 px-10">
-            <div class="p-4 shadow-lg rounded">
+            <div class="shadow-lg rounded bg-neutral-300">
               <img src="img/tamim.jpg" alt="">
               <h3 id="player-4" class="text-2xl font-semibold text-center mt-2">Tamim Iqbal</h3>
               <p class="text-center">Batsman</p>
-                <div class="mx-28">
-                  <button id="btn3" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                <div class="mx-32 pb-3">
+                  <button id="btn3" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                     select</button>
                 </div>
             </div>
-            <div class="p-4 shadow-lg rounded">
+            <div class="shadow-lg rounded bg-neutral-300">
                 <img src="img/Mahmudullah.jpg" alt="">
                 <h3 id="player-5" class="text-2xl font-semibold text-center mt-2">Mohammad Mahmudullah</h3>
                 <p class="text-center">All-Rounder</p>
-                  <div class="mx-28">
-                    <button id="btn4" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                  <div class="mx-32">
+                    <button id="btn4" class="p-4 mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                       select</button>
                   </div>
               </div>
-              <div class="p-4 shadow-lg rounded">
+              <div class="shadow-lg rounded bg-neutral-300">
                 <img src="img/Liton-Das.jpg" alt="">
                 <h3 id="player-6" class="text-2xl font-semibold text-center mt-4">Liton Das</h3>
                 <p class="text-center">Wicket-Keeper</p>
-                  <div class="mx-28">
-                    <button id="btn5" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                  <div class="mx-32">
+                    <button id="btn5" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl" onclick="addToPlayer(this)">
                       select</button>
                   </div>
               </div>
-             <div class="p-4 shadow-lg row-span-4">
-               <h1 class="text-center font-bold text-black text-2xl">Budget</h1>
-                  <h1 class="pt-4 pb-2 font-semibold">Per Player <input class="m-1" id="num" type="number"></h1>
+             <div class="p-4 shadow-lg shadow-gray-500 row-span-4 bg-neutral-300" >
+               <h1 class="text-center font-bold text-amber-500 text-4xl">Budget</h1>
+                  <h1 class="pt-4 pb-2 font-semibold mx-12">Per Player <input class="m-1 w-1/2 text-center" id="num" type="text"></h1>
                   
                   <div>
                   <button id="btn-cal" class="w-full mt-2 bg-[#015196] py-2 px-2 text-white font-semibold rounded text-1xl">
                     Calculate</button>
 
                   </div>
-                  <h2 class="mt-4 font-semibold">Player Expense : $ <span id="total">00</span></h2>
+                  <h2 class="mt-4 font-semibold mx-12">Player Expense : $ <span id="total">00</span></h2>
 
-                  <h1 class="pt-2 font-semibold">Manager <input class="m-2" id="num1" type="number"></h1>
-                  <h1 class="font-semibold">Coach <input class="m-7" id="num2" type="number"></h1>
+                  <h1 class="pt-2 font-semibold mx-12">Manager <input class="m-2 w-1/2 text-center" id="num1" type="text"></h1>
+                  <h1 class="font-semibold mx-12">Coach <input class="m-7 w-1/2 text-center" id="num2" type="text"></h1>
                   <div>
                     <button id="btn-cal-total" class="w-full mt-2 bg-[#015196] py-2 px-2 text-white font-semibold rounded text-1xl">
                       Calculate Total</button>
   
                     </div>
-                    <h2 class="mt-4 font-semibold text-3xl text-[#FF5E19]">Total : $ <span id="total-expense">00</span></h2>
+                    <h2 class="mt-4 font-semibold text-3xl text-[#FF5E19] mx-16">Total : $ <span id="total-expense">00</span></h2>
 
                   </div>
               </div>
             </div>
            </section>
         </main>
-        <footer class="bg-black h-32">
+        <footer class="bg-neutral-700 h-32">
             <h2 class="text-white text-center pt-16">Copyright @ 2022. Souvik Halder. All Rights Reserved</h2>
         </footer>
         <script src="utilities.js"></script>

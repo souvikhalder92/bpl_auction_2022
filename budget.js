@@ -1,30 +1,38 @@
-document.getElementById('btn-cal').addEventListener('click',function(){
+document.getElementById('btn-cal').addEventListener('click',function(count){
     const value = getInputFieldValueById('num');
-
-    const total = value*5 ;
-    console.log(total);
-
+    const total = value*playerCount();
+    if(isNaN(value))
+    {
+        alert('Please enter a number');
+        return;
+    }
     const expense = document.getElementById('total');
     expense.innerText = total;
+    
+    
+    
 
 })
-document.getElementById('btn-cal-total').addEventListener('click',function(){
-    const valueFieldOne = document.getElementById('num1');
-    const valueOneString = valueFieldOne.value;
-    const valueOne = parseFloat(valueOneString);
-
-    const valueFieldTwo = document.getElementById('num2');
-    const valueTwoString = valueFieldTwo.value;
-    const valueTwo = parseFloat(valueTwoString);
-
+document.getElementById('btn-cal-total').addEventListener('click',function(count){
+    
+    const valueOne = getInputFieldValueById('num1');
+    const valueTwo =getInputFieldValueById('num2');
     const value = getInputFieldValueById('num');
-
-    const total = value*5 ;
-   
+    const total = value*playerCount();
+    if(isNaN(valueOne) || isNaN(valueTwo) )
+    {
+        alert('Please enter a number');
+        return;
+    }
+    
     const totalExpense =  total + valueOne + valueTwo;
     console.log(totalExpense);
+    
 
-   const totalcalculate = document.getElementById('total-expense');
-   totalcalculate.innerText = totalExpense;
+   const totalCalculate = document.getElementById('total-expense');
+   totalCalculate.innerText = totalExpense;
+
+
+
 
 })
