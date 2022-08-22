@@ -28,38 +28,41 @@
          <div class="grid  grid-cols-4 gap-7 px-10">
          <div class="p-4 shadow-lg rounded">
            <img src="img/shakib.jpg" alt="">
-           <h3 class="text-2xl font-semibold text-center mt-2">Shakib Al Hasan</h3>
+           <h3 id="player-1" class="text-2xl font-semibold text-center mt-2">Shakib Al Hasan</h3>
            <p class="text-center">All-Rounder</p>
              <div class="mx-28">
-               <button class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+               <button id="btn" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                  select</button>
              </div>
          </div>
          <div class="p-4 shadow-lg rounded">
              <img src="img/Mashrafe.png" alt="">
-             <h3 class="text-2xl font-semibold text-center mt-2">Mashrafe Bin Mortaza </h3>
+             <h3 id="player-2" class="text-2xl font-semibold text-center mt-2">Mashrafe Bin Mortaza </h3>
              <p class="text-center">Fast-Bowler</p>
                <div class="mx-28">
-                 <button class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                 <button id="btn1" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                    select</button>
                </div>
            </div>
            <div class="p-4 shadow-lg rounded">
              <img src="img/Mushfiqur-Rahim.jpg" alt="">
-             <h3 class="text-2xl font-semibold text-center mt-2">Mushfiqur Rahim</h3>
+             <h3 id="player-3" class="text-2xl font-semibold text-center mt-2">Mushfiqur Rahim</h3>
              <p class="text-center">Wicket-Keeper</p>
                <div class="mx-28">
-                 <button class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                 <button id="btn2" class="mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                    select</button>
                </div>
            </div>
           <div class="p-4 shadow-lg">
             <h1 class="text-center font-bold text-black text-2xl">Selected-V</h1>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ol>
+            <ul id="ul" class="mx-12 mt-5">
+               <li id="li-one" class="list-decimal"></li>
+                <li id="li-two"></li>
+                <li id="li-three"></li>
+                <li id="li-four"></li>
+                <li id="li-five"></li>
+                <li id="li-six"></li>
+              </ul>
         
                </div>
            </div>
@@ -69,34 +72,51 @@
             <div class="grid  grid-cols-4 gap-7 px-10">
             <div class="p-4 shadow-lg rounded">
               <img src="img/tamim.jpg" alt="">
-              <h3 class="text-2xl font-semibold text-center mt-2">Tamim Iqbal</h3>
+              <h3 id="player-4" class="text-2xl font-semibold text-center mt-2">Tamim Iqbal</h3>
               <p class="text-center">Batsman</p>
                 <div class="mx-28">
-                  <button class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                  <button id="btn3" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                     select</button>
                 </div>
             </div>
             <div class="p-4 shadow-lg rounded">
                 <img src="img/Mahmudullah.jpg" alt="">
-                <h3 class="text-2xl font-semibold text-center mt-2">Mohammad Mahmudullah</h3>
+                <h3 id="player-5" class="text-2xl font-semibold text-center mt-2">Mohammad Mahmudullah</h3>
                 <p class="text-center">All-Rounder</p>
                   <div class="mx-28">
-                    <button class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                    <button id="btn4" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                       select</button>
                   </div>
               </div>
               <div class="p-4 shadow-lg rounded">
                 <img src="img/Liton-Das.jpg" alt="">
-                <h3 class="text-2xl font-semibold text-center mt-4">Liton Das</h3>
+                <h3 id="player-6" class="text-2xl font-semibold text-center mt-4">Liton Das</h3>
                 <p class="text-center">Wicket-Keeper</p>
                   <div class="mx-28">
-                    <button class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
+                    <button id="btn5" class=" mt-2 uppercase bg-[#015196] py-4 px-4 text-white font-semibold rounded-xl">
                       select</button>
                   </div>
               </div>
-             <div class="p-4 shadow-lg">
+             <div class="p-4 shadow-lg row-span-4">
                <h1 class="text-center font-bold text-black text-2xl">Budget</h1>
+                  <h1 class="pt-4 pb-2 font-semibold">Per Player <input class="m-1" id="num" type="number"></h1>
                   
+                  <div>
+                  <button id="btn-cal" class="w-full mt-2 bg-[#015196] py-2 px-2 text-white font-semibold rounded text-1xl">
+                    Calculate</button>
+
+                  </div>
+                  <h2 class="mt-4 font-semibold">Player Expense : $ <span id="total">00</span></h2>
+
+                  <h1 class="pt-2 font-semibold">Manager <input class="m-2" id="num1" type="number"></h1>
+                  <h1 class="font-semibold">Coach <input class="m-7" id="num2" type="number"></h1>
+                  <div>
+                    <button id="btn-cal-total" class="w-full mt-2 bg-[#015196] py-2 px-2 text-white font-semibold rounded text-1xl">
+                      Calculate Total</button>
+  
+                    </div>
+                    <h2 class="mt-4 font-semibold text-3xl text-[#FF5E19]">Total : $ <span id="total-expense">00</span></h2>
+
                   </div>
               </div>
             </div>
@@ -105,6 +125,8 @@
         <footer class="bg-black h-32">
             <h2 class="text-white text-center pt-16">Copyright @ 2022 All Rights Reserved</h2>
         </footer>
-    
+        <script src="utilities.js"></script>
+       <script src="cric.js"></script>
+        <script src="budget.js"></script>
 </body>
 </html>
