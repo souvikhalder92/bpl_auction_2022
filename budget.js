@@ -19,16 +19,16 @@ document.getElementById('btn-cal-total').addEventListener('click',function(count
     const valueTwo =getInputFieldValueById('num2');
     const value = getInputFieldValueById('num');
     const total = value*playerCount();
+    
     if(isNaN(valueOne) || isNaN(valueTwo) )
     {
         alert('Please enter a number');
         return;
     }
-    
-    const totalExpense =  total + valueOne + valueTwo;
+        const totalExpense =  total + valueOne + valueTwo;
     
 
-   const totalCalculate = document.getElementById('total-expense');
-   totalCalculate.innerText = totalExpense;
+        const totalCalculate = document.getElementById('total-expense');
+        totalCalculate.innerText = totalExpense;
 
 })

@@ -48,43 +48,58 @@ function addToPlayer(player){
 const btn = document.getElementById('btn');
 btn.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn.style.backgroundColor = 'gray';
+}
+
    
 
 })
 const btn1 = document.getElementById('btn1');
 btn1.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn1.style.backgroundColor = 'gray';
+    }
   
 
 })
 const btn2 = document.getElementById('btn2');
 btn2.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn2.style.backgroundColor = 'gray';
-   
+    }
 
 })
 const btn3 = document.getElementById('btn3');
 btn3.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn3.style.backgroundColor = 'gray';
-  
+    }
 
 })
 const btn4 = document.getElementById('btn4');
 btn4.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn4.style.backgroundColor = 'gray';
-    
+    }
 
 })
 const btn5 = document.getElementById('btn5');
 btn5.addEventListener('click',function()
 { 
+    const count = playerArray.length;
+    if(count <= 5){
     btn5.style.backgroundColor = 'gray';
- 
+    }
 
 })
 
