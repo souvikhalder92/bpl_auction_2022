@@ -92,6 +92,15 @@ btn5.addEventListener('click',function()
 
 function playerCount()
 {
-    const count = playerArray.length;
-    return count;
+        const count = playerArray.length;
+        if(count > 5){
+        return count-1;
+        }
+        else
+        {
+            return count;
+        }
+
+   
+   
 }
